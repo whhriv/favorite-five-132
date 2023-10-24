@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <div class="col text-center">
+        <h1>I love colors!</h1>
+        <h4>Click on the button below to see my 5 Favorite Colors</h4>
+        <a href="{{ url_for('fav_five') }}" class="btn btn-outline-primary w-100">Click Me!</a>
+    </div>
+{% endblock %}

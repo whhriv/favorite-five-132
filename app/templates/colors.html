@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <h1 class="text-center">Favorite Colors</h1>
+    {% for fav in favorites %}
+        <div class="col-12 bg-{{ fav['bs_color'] }}">
+            <h1 class="text-center">{{ fav['color'] }}</h1>
+        </div>
+    {% endfor %}
+{% endblock %}
